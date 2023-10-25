@@ -1,0 +1,121 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: radial-gradient(at center, #120274, #04021B);
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content {
+    background: none;
+}
+
+
+.japanese-text, .english-text, .japanese-text.second-text, .english-text.second-text, .japanese-text.thrid-text, .english-text.third-text {
+    color: #ABC4ED;
+    font-family: "Hina Mincho", serif;
+    font-size: 24pt;
+    filter: blur(4px);
+    transition: filter 0.3s ease;
+    text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.7);
+}
+
+
+.japanese-text:hover, .english-text:hover, .japanese-text.second-text:hover, .english-text.second-text:hover, .japanese-text.thrid-text:hover, .english-text.third-text:hover {
+    filter: blur(0);
+}
+
+.group1 {
+    position: absolute; 
+    margin-top: 600px;
+    left: 500px;
+}
+
+.group2 {
+    position: absolute; 
+    margin-top: 1200px; 
+    left: 850px;
+}
+
+.group3 {
+    position: absolute; 
+    margin-top: 1800px; 
+    left: 10px;
+}
+
+.top-text {
+    color: #3925B7; 
+    font-size: 12pt; 
+    animation: fadeInOut 4s ease infinite; 
+    position: fixed; 
+    top: 0; 
+    width: 100%; 
+}
+
+.bottom-text {
+    color: #3925B7; 
+    font-size: 12pt; 
+    animation: fadeInOut 4s ease infinite; 
+    position: fixed; 
+    bottom: 0; 
+    width: 100%; 
+}
+
+@keyframes fadeInOut {
+    0% {
+        opacity: 0; 
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0; 
+    }
+}
+
+.name {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+.name-text {
+    color: #3925B7;
+    font-family: "Kings", serif;
+    font-size: 108pt;
+}
+
+.credit {
+    text-align: right; 
+    transform: translateX(180%) translateY(2150%)
+}
+
+.songwriter-text {
+    color: #3925B7;
+    font-family: "Kings", serif;
+    font-size: 12pt;
+}
+
+.pg-text {
+    position: absolute;
+    left: 50%; 
+    bottom: -300%; 
+    transform: translateX(-50%); 
+    color: #FFFFFF; 
+    font-family: 'Hina Mincho', serif;
+    font-size: 12pt;
+}
+
+
+
+@media screen and (max-width: 390px) {
+    .group1, .group2, .group3 {
+        position: static;
+        margin: 0;
+    }
+}
+

@@ -1,0 +1,46 @@
+Style.css file 
+
+.container {
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+}
+
+.image-container {
+    flex: 1;
+    text-align: right;
+}
+
+.title-text {
+    position: absolute;
+    top: 20;
+    left: 0;
+    font-family: "Darumadrop One", sans-serif; 
+    font-size: 100px;
+    color: #ffffff;
+}
+
+.date-text {
+    position: absolute;
+    top: 20px; 
+    right: 20px; 
+    font-family: "American Typewriter", sans-serif;
+    font-size: 20px;
+    color: #000000;
+}
+
+.lyric-text {
+    transform: rotate(35deg);
+    color: #FF7BAC;
+    font-size: 24px;
+}
+
+.pg-text {
+    position: absolute;
+    left: 50%; 
+    bottom: -280%; 
+    transform: translateX(-50%); 
+    color: #FFFFFF; 
+    font-family: 'Hina Mincho', serif;
+    font-size: 12pt;
+}

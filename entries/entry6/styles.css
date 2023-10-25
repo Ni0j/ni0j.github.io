@@ -1,0 +1,184 @@
+body {
+    background-image: url('imgs/bg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+.container {
+    text-align: center;
+    z-index: 999; 
+}
+
+.glitch-image {
+    position: absolute;
+    animation: glitchAnimation 2s infinite;
+    top: 58%; 
+    left: 17%;
+}
+.image-box2 .glitch-image {
+    animation: glitchAnimation2 2s infinite;
+    top: 20%; 
+    left: 20%;
+}
+
+.image-box3 .glitch-image {
+    animation: glitchAnimation3 2s infinite; 
+    top: 60%; 
+    left: 30%;
+}
+
+.image-box4 .glitch-image {
+    animation: glitchAnimation4 2s infinite; 
+    top: 47%; 
+    left: 69%;
+}
+
+@keyframes glitchAnimation {
+    0% {
+        opacity: 0; 
+        transform: translateX(0);
+    }
+    50% {
+        opacity: 1; 
+        transform: translateX(200px);
+    }
+    100% {
+        opacity: 0; 
+        transform: translateX(0);
+    }
+}
+
+@keyframes glitchAnimation2 {
+    0% {
+        opacity: 0;
+        transform: translateY(0);
+    }
+    50% {
+        opacity: 1;
+        transform: translateY(200px);
+    }
+    100% {
+        opacity: 0; 
+        transform: translateY(0);
+    }
+}
+
+@keyframes glitchAnimation3 {
+    0% {
+        opacity: 0; 
+        transform: translateY(0);
+    }
+    50% {
+        opacity: 1;
+        transform: translateY(-300px);
+    }
+    100% {
+        opacity: 0; 
+        transform: translateY(0);
+    }
+}
+
+@keyframes glitchAnimation4 {
+    0% {
+        opacity: 0; 
+        transform: translateX(0);
+    }
+    50% {
+        opacity: 1; 
+        transform: translateX(-300px);
+    }
+    100% {
+        opacity: 0; 
+        transform: translateX(0);
+    }
+}
+
+
+.text {
+    font-family: 'AB-megadot9';
+    font-size: 108px;
+    color: #ff75f8;
+}
+
+.text1{
+    font-size: 64px;
+    font-family: 'Dancing Script';
+    color: #ff75f8;
+    display: inline-block;
+    animation: wavy 2s linear infinite;
+}
+
+.text2{
+    font-size: 64px;
+    font-family: 'Tourney';
+    color: #ff75f8;
+    display: inline-block;
+    animation: wavy 2s linear infinite;
+}
+
+@keyframes wavy {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-5px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.text,.text1,.text2 {
+    animation: flash 10s linear infinite;
+}
+
+.centered-button:hover {
+    animation: flash 1s linear infinite;
+}
+
+
+@keyframes flash {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.centered-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1000;
+}
+
+.centered-button img {
+    width: 150px; 
+    height: 150px;
+    cursor: pointer;
+    z-index: 0;
+}
+
+.centered-button a {
+    text-decoration: none;
+}
+
+.pg-text {
+    position: absolute;
+    left: 50%; 
+    bottom: 0%; 
+    transform: translateX(-50%); 
+    color: #FFFFFF; 
+    font-family: 'Hina Mincho', serif;
+    font-size: 12pt;
+}
+

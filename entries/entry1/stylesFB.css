@@ -1,0 +1,67 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* 让容器铺满整个视口高度 */
+}
+
+.container {
+    text-align: center;
+}
+
+.image {
+    max-width: 100%;
+    height: auto;
+}
+
+.text-box,
+.texttwo-box,
+title-text,
+more-text,
+pg-text {
+    background-color: white;
+    border: 5px solid #000;
+    padding: 20px;
+    font-family: 'Toppan Bunkyu Midashi Mincho', serif;
+    font-size: 24pt;
+    color: #FFFFFF;
+    transition: color 0.3s;
+    margin: 10px;
+    text-align: center;
+}
+
+.text-box:hover,
+.texttwo-box:hover {
+    color: #9EC4C8;
+}
+
+.title-text {
+    transform: rotate(35.35deg);
+    font-family: 'Toppan Bunkyu Midashi Mincho', serif;
+    font-size: 108pt;
+    color: #FF0000;
+}
+
+.custom-font {
+    font-family: 'AB-megadot9', sans-serif;
+    font-size: 200pt;
+}
+
+.customtwo-font {
+    font-family: 'AB-megadot9', sans-serif;
+    font-size: 42pt;
+}
+
+.more-text p {
+    font-size: 18pt;
+    margin: 0;
+}
+
+.pg-text {
+    font-family: 'Hina Mincho', serif;
+    font-size: 12pt;
+}

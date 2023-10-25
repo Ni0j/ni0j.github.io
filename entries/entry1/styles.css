@@ -1,0 +1,97 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #000; 
+  }
+  
+  .container {
+    width: 100%;
+    text-align: center;
+  }
+  
+  .image {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    margin-top: 0px; 
+
+  }
+  
+  .text-box {
+    position: absolute;
+    top: 40%; 
+    left: 40%; 
+    transform: translate(-50%, -50%); 
+    background-color: white; 
+    border: 5px solid #000;
+    padding: 20px; 
+    font-family: 'Toppan Bunkyu Midashi Mincho', serif;
+    font-size: 30px; 
+    color: #FFFFFF; 
+    transition: color 0.3s; 
+}
+
+.texttwo-box {
+    position: absolute;
+    top: 60%; 
+    left: 60%; 
+    transform: translate(-50%, -50%); 
+    background-color: white; 
+    border: 5px solid #000;
+    padding: 20px; 
+    font-family: 'Toppan Bunkyu Midashi Mincho', serif; 
+    font-size: 30px; 
+    color: #FFFFFF; 
+    transition: color 0.3s; 
+}
+
+.text-box:hover,
+.texttwo-box:hover {
+    color: #9EC4C8;
+}
+
+.title-text {
+    position: absolute;
+    left:0%; 
+    top: 80%; 
+    transform: rotate(30deg); 
+    color: #FF0000; 
+    font-family: 'Toppan Bunkyu Midashi Mincho', serif; 
+    font-size: 150px;
+}
+
+
+.custom-font {
+    font-family: 'AB-megadot9', sans-serif;
+    font-size: 250pt;
+}
+
+
+.customtwo-font {
+    font-family: 'AB-megadot9', sans-serif;
+    font-size: 42pt;
+}
+
+
+.more-text p {
+    font-size: 18pt;
+    margin: 0;
+}
+
+.more-text {
+    position: absolute;
+    right: 5%;
+    top: 155%; 
+    color: #FF0000; 
+}
+
+.pg-text {
+    position: absolute;
+    left: 50%; 
+    bottom: -100%; 
+    transform: translateX(-50%); 
+    color: #FFFFFF; 
+    font-family: 'Hina Mincho', serif;
+    font-size: 12pt;
+}

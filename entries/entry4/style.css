@@ -1,0 +1,108 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background: linear-gradient(to bottom, #E9E3CF, #5E94C1);
+    font-family: 'toppan bunkyu midashi mincho', sans-serif;
+    color: white;
+    overflow: auto;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    height: 100%;
+    padding: 20px;
+}
+
+.top-text {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.top-text span {
+    font-size: 180px;
+    transition: transform 0.3s;
+}
+
+.top-text span:hover {
+    transform: scale(1.5);
+}
+
+.top-text span:first-child {
+    margin-right: auto;
+}
+
+.top-text span:last-child {
+    margin-left: auto;
+}
+
+.left-bottom-img {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transform: scaleX(-1); 
+}
+
+.right-bottom-img {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.top-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 20px;
+}
+
+.text-container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    margin-top: 20px;
+    position: relative; 
+}
+
+.one-text,
+.two-text,
+.three-text {
+    font-family: 'BIZ UDMincho', serif;
+    font-size: 24px;
+    color: #3F4456;
+    position: absolute; 
+    bottom: 0; 
+}
+
+.one-text {
+    right: 35%;
+    transform: translateX(50%) translateY(500%) rotate(60deg); 
+}
+
+.two-text {
+    left: 35%;
+    transform: translateX(-50%) translateY(500%) rotate(-60deg); 
+}
+
+
+.three-text {
+    transform: translateX(0%) translateY(1200%) rotate(0deg); 
+}
+
+.pg-text {
+    position: absolute;
+    left: 50%; 
+    bottom: 2%; 
+    transform: translateX(-50%); 
+    color: #FFFFFF; 
+    font-family: 'Hina Mincho', serif;
+    font-size: 12pt;
+}

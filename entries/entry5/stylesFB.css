@@ -1,0 +1,110 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: radial-gradient(at center, #120274, #04021B);
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.top-text {
+    color: #3925B7;
+    font-size: 12pt;
+    animation: fadeInOut 4s ease infinite;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+.bottom-text {
+    color: #3925B7;
+    font-size: 12pt;
+    animation: fadeInOut 4s ease infinite;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.content {
+    background: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    text-align: center;
+    flex-direction: column;
+}
+
+.group1, .group2, .group3 {
+    margin: 20px;
+}
+
+.japanese-text, .english-text {
+    color: #ABC4ED;
+    font-family: "Hina Mincho", serif;
+    font-size: 24pt;
+    filter: blur(4px);
+    transition: filter 0.3s ease;
+    text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.7);
+}
+
+.japanese-text:hover, .english-text:hover {
+    filter: blur(0);
+}
+
+.name {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    bottom: 20px;
+    left: 20px;
+}
+
+.name-text {
+    color: #3925B7;
+    font-family: "Kings", serif;
+    font-size: 108pt;
+}
+
+.credit {
+    text-align: right;
+    transform: translateX(180%) translateY(2150%);
+}
+
+.songwriter-text {
+    color: #3925B7;
+    font-family: "Kings", serif;
+    font-size: 12pt;
+}
+
+@keyframes fadeInOut {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@media screen and (max-width: 390px) {
+    .group1, .group2, .group3 {
+        margin: 0;
+    }
+}
+
+.pg-text {
+    position: absolute;
+    left: 50%; 
+    bottom: -100%; 
+    transform: translateX(-50%); 
+    color: #FFFFFF; 
+    font-family: 'Hina Mincho', serif;
+    font-size: 12pt;
+}

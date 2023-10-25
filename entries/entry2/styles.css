@@ -1,0 +1,88 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(#9B9AAE, #C4ADBB);
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content {
+    background: none;
+}
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    z-index: 0;
+}
+
+.japanese-text, .english-text, .japanese-text.second-text, .english-text.second-text, .japanese-text.thrid-text, .english-text.third-text {
+    color: #FFFFFF;
+    font-family: "Hina Mincho", serif;
+    font-size: 60pt;
+    filter: blur(50px);
+    transition: filter 0.3s ease;
+    text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.7);
+    z-index: 1;
+}
+
+
+.japanese-text:hover, .japanese-text.second-text:hover, .japanese-text.thrid-text:hover{
+    filter: blur(0);
+}
+
+.group1 {
+    position: absolute; 
+    margin-top: 600px;
+    left: 500px;
+    z-index: 1;
+}
+
+.group2 {
+    position: absolute; 
+    margin-top: 1200px; 
+    left: 850px;
+    z-index: 1;
+}
+
+.group3 {
+    position: absolute; 
+    margin-top: 1800px; 
+    left: 10px;
+    z-index: 1;
+}
+
+.name {
+    position: absolute;
+    top: -50%;
+    left: 20px;
+    z-index: 1;
+}
+
+.name-text {
+    color: #FFFFFF;
+    font-family: "hina-mincho", serif;
+    text-decoration: underline; 
+    font-size: 300pt;
+    z-index: 1;
+}
+
+.pg-text {
+    position: absolute;
+    left: 50%; 
+    bottom: -280%; 
+    transform: translateX(-50%); 
+    color: #FFFFFF; 
+    font-family: 'Hina Mincho', serif;
+    font-size: 12pt;
+    z-index:3;
+}

@@ -1,0 +1,130 @@
+body {
+    background-color: black;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    flex: 1;
+}
+
+.flex-container2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex: 1;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.text, .text2, .paragraphjp1, .paragraphjp2,.paragraphen1,.paragraphen2 {
+    font-family: "Hiragino Kaku Gothic Std", sans-serif;
+    font-size: 36pt; 
+    color: #FFFFFF;
+    padding: 0.25in;
+}
+
+.text2 {
+    font-size: 36pt;
+}
+
+.paragraphjp1 {
+    font-size: 18pt;
+    columns: 3;
+    column-gap: 0.25in;
+    border-top: 2px solid #FFFFFF; 
+    break-inside: avoid;
+    margin-bottom: 20px; 
+}
+
+.paragraphjp2 {
+    font-size: 18pt;
+    columns: 3;
+    column-gap: 0.25in;
+    break-inside: avoid;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+
+.paragraphen1 {
+    font-size: 18pt;
+    columns: 3; 
+    column-gap: 0.25in;
+    break-inside: avoid; 
+    margin-top: 100px;
+}
+
+.paragraphen2 {
+    font-size: 18pt;
+    columns: 3;
+    column-gap: 0.25in;
+    break-inside: avoid;
+    margin-top: 100px;
+    
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    filter: grayscale(100%);
+    transition: filter 0.3s; 
+}
+
+img:hover {
+    filter: grayscale(0%); 
+}
+
+
+img[src="imgs/picall.webp"] {
+    max-width: 100%;
+    height: auto;
+    filter: grayscale(100%); 
+    opacity: 0; 
+    transition: filter 1s, opacity 1s; 
+}
+
+img[src="imgs/picall.webp"]:hover {
+    filter: grayscale(0%); 
+    opacity: 1; 
+}
+
+
+
+#imageB {
+    display: none;
+}
+
+
+#imageA:hover {
+    display: none;
+}
+
+#imageA:hover + #imageB {
+    display: block;
+}
+
+
+.imageB {
+    display: none;
+}
+
+
+#imageA:hover {
+    display: none;
+}
+
+#imageA:hover + #imageB {
+    display: block;
+}

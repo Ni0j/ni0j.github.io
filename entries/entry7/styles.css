@@ -128,3 +128,11 @@ img[src="imgs/picall.webp"]:hover {
 #imageA:hover + #imageB {
     display: block;
 }
+
+
+/* 在移动设备情况下将所有字体大小设置为18pt */
+@media (max-width: 800px) {
+    .text, .text2, .paragraphjp1, .paragraphjp2, .paragraphen1, .paragraphen2 {
+        font-size: 9pt; /* 将字体大小设置为18pt */
+    }
+}

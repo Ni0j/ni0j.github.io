@@ -21,6 +21,7 @@ body {
     flex: 1;
 }
 
+
 .container {
     display: flex;
     flex-direction: column;
@@ -82,25 +83,30 @@ img {
     transition: filter 0.3s; 
 }
 
+#imageA,
+#imageB {
+    filter: grayscale(0%);
+    transition: filter 0.3s;
+}
+
 img:hover {
     filter: grayscale(0%); 
 }
 
 
-img[src="imgs/picall.webp"] {
-    max-width: 100%;
-    height: auto;
-    filter: grayscale(100%); 
+img[src="imgs/portrait1.avif"] {
     opacity: 0; 
     transition: filter 1s, opacity 1s; 
 }
 
-img[src="imgs/picall.webp"]:hover {
-    filter: grayscale(0%); 
+img[src="imgs/portrait1.avif"]:hover {
     opacity: 1; 
 }
 
-
+.flexbox2{
+  max-width: 800px;
+  max-height: 794px;
+}
 
 #imageB {
     display: none;
@@ -133,4 +139,24 @@ img[src="imgs/picall.webp"]:hover {
     .paragraphjp1, .paragraphjp2, .paragraphen1, .paragraphen2 {
         columns: 1;
     }
+}
+
+.cover {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0; 
+}
+
+.cover img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    transition: opacity 1s; 
+}
+
+.cover:hover img {
+    opacity: 0; 
 }

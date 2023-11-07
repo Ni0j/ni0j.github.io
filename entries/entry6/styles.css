@@ -182,3 +182,19 @@ body {
     font-size: 12pt;
 }
 
+@media (max-width: 800px) {
+    body {
+        filter: grayscale(0%) hue-rotate(200deg); /* 应用蓝色滤镜 */
+        background: url('imgs/bg.jpg') no-repeat center center fixed;
+        background-size: cover; /* 背景图片填充整个页面 */
+        background-image: url('imgs/bg.jpg');
+    }
+    .pg-text {
+        display: none;
+    }
+}
+
+.container {
+    text-align: center;
+    z-index: 999;
+}

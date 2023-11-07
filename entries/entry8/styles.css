@@ -111,7 +111,7 @@ img {
 }
 
 #imageB {
-    animation-delay: 2s; /* 间隔2秒开始动画，实现交替显示 */
+    animation-delay: 2s; 
 }
 
 
@@ -141,7 +141,7 @@ img[src="imgs/portrait1.avif"]:hover {
     }
     .cover img {
         width: 50%;
-        height: 50%; /* 注意这里是冒号而不是中文的冒号 */
+        height: 50%; 
         object-fit: cover;
         transition: opacity 1s;
     }

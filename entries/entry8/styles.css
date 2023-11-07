@@ -83,11 +83,37 @@ img {
     transition: filter 0.3s; 
 }
 
-#imageA,
-#imageB {
-    filter: grayscale(0%);
-    transition: filter 0.3s;
+#imageA, #imageB {
+    max-width: 100%;
+    height: auto;
+    filter: grayscale(100%);
+    opacity: 0;
+    transition: filter 0.3s, opacity 0.3s;
+    animation: imageAnimation 4s infinite;
+    position: absolute;
+    top: 0;
+    left: 0;
 }
+
+@keyframes imageAnimation {
+    0%, 100% {
+        filter: grayscale(0%);
+        opacity: 1;
+    }
+    50% {
+        filter: grayscale(100%);
+        opacity: 0;
+    }
+}
+
+#imageA {
+    animation-delay: 0s;
+}
+
+#imageB {
+    animation-delay: 2s; /* 间隔2秒开始动画，实现交替显示 */
+}
+
 
 img:hover {
     filter: grayscale(0%); 
@@ -108,38 +134,19 @@ img[src="imgs/portrait1.avif"]:hover {
   max-height: 794px;
 }
 
-#imageB {
-    display: none;
-}
-
-
-#imageA:hover {
-    display: none;
-}
-
-#imageA:hover + #imageB {
-    display: block;
-}
-
-
-.imageB {
-    display: none;
-}
-
-
-#imageA:hover {
-    display: none;
-}
-
-#imageA:hover + #imageB {
-    display: block;
-}
 
 @media (max-width: 800px) {
     .paragraphjp1, .paragraphjp2, .paragraphen1, .paragraphen2 {
         columns: 1;
     }
+    .cover img {
+        width: 50%;
+        height: 50%; /* 注意这里是冒号而不是中文的冒号 */
+        object-fit: cover;
+        transition: opacity 1s;
+    }
 }
+
 
 .cover {
     position: fixed;
@@ -160,3 +167,5 @@ img[src="imgs/portrait1.avif"]:hover {
 .cover:hover img {
     opacity: 0; 
 }
+
+

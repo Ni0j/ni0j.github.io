@@ -1,3 +1,5 @@
+
+
 body {
     background-color: black;
     margin: 0;
@@ -223,5 +225,11 @@ img:not(#imageA):not(#imageB):hover {
         transition: opacity 1s;
     }
 }
+
+
+/*Notes for myself*/
+/*added text highlight effect, span in paragraph still struggling
+/*added reference+pillar(section indicator)
+/*typography: all the spacing from paragraph to paragraph has been adjusted equally
 
 

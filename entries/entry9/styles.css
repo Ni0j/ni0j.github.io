@@ -1,0 +1,227 @@
+body {
+    background-color: black;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    overflow-x: hidden;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    flex: 1;
+}
+
+.flex-container2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex: 1;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.text, .text2, .paragraphjp1, .paragraphjp2,.paragraphjp3,.paragraphen1,.paragraphen2,.paragraphen3,.credit-text {
+    font-family: "Hiragino Kaku Gothic Std", sans-serif;
+    font-size: 36pt; 
+    color: #FFFFFF;
+    padding: 0.25in;
+}
+
+.text2 {
+    font-size: 36pt;
+}
+
+.paragraphjp1 {
+    font-size: 18pt;
+    columns: 3;
+    column-gap: 0.25in;
+    border-top: 2px solid #FFFFFF; 
+    break-inside: avoid;
+}
+
+.paragraphjp2 {
+    font-size: 18pt;
+    columns: 3;
+    column-gap: 0.25in;
+    break-inside: avoid;
+    margin-top: 120px;
+}
+
+.paragraphjp3 {
+    font-size: 18pt;
+    columns: 3;
+    column-gap: 0.25in;
+    break-inside: avoid;
+    margin-top: 120px;
+    margin-bottom: 120px;
+}
+
+.paragraphen1 {
+    font-size: 18pt;
+    columns: 3; 
+    column-gap: 0.25in;
+    break-inside: avoid; 
+    margin-top: 120px;
+}
+
+.paragraphen2 {
+    font-size: 18pt;
+    columns: 3;
+    column-gap: 0.25in;
+    break-inside: avoid;
+    margin-top: 120px;  
+}
+
+.paragraphen3 {
+    font-size: 18pt;
+    columns: 3;
+    column-gap: 0.25in;
+    break-inside: avoid;
+    margin-top: 120px;  
+    margin-bottom: 120px;
+}
+
+.credit-text {
+    color: #f4f4f8; 
+    font-size: 12pt; 
+    bottom: 0; 
+    width: 100%; 
+
+}
+
+.credit-text a {
+    color: #DD0000; /* 超链接颜色，可以根据你的设计选择其他颜色 */
+    text-decoration: none; /* 去掉超链接下划线 */
+  }
+  
+  .credit-text a:hover {
+    text-decoration: underline; /* 鼠标悬停时显示下划线 */
+  }
+  
+  span.name {
+    position: relative;
+    z-index: 1;
+    display: inline-block; /* 将 span 转换为块级元素 */
+    transform: translateZ(0); /* 防止元素产生视觉偏移 */
+}
+
+span.name::before {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    bottom: 0;
+    left: -0.25em;
+    right: -0.25em;
+    background-color: #DD0000;
+    transform-origin: center left;
+    transform: scaleX(0);
+    transition: transform 0.2s ease-in-out;
+}
+
+span.name:hover::before {
+    transform: scaleX(1);
+    transform-origin: center left;
+}
+
+span.credit {
+    position: relative;
+}
+
+span.credit::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 10px;
+    background-color: #DD0000;
+    transform: scaleY(0);
+    transition: transform 0.5s ease;
+    left: -8px;
+    transform-origin: center top;
+}
+
+span.credit:hover::before {
+    transform-origin: center bottom;
+    transform: scaleY(1);
+}
+
+
+  
+  
+
+  
+img {
+    max-width: 100%;
+    height: auto;
+    transition: filter 0.3s; 
+}
+
+
+/* 移除全局图片的默认黑白滤镜 */
+img {
+    max-width: 100%;
+    height: auto;
+    transition: filter 0.3s; 
+}
+
+/* 为除了imageA和imageB之外的所有图片添加黑白滤镜 */
+img:not(#imageA):not(#imageB) {
+    filter: grayscale(100%); 
+}
+
+img:not(#imageA):not(#imageB):hover {
+    filter: grayscale(0%); 
+}
+
+
+
+#imageB {
+    display: none;
+}
+
+
+#imageA:hover {
+    display: none;
+}
+
+#imageA:hover + #imageB {
+    display: block;
+}
+
+
+.imageB {
+    display: none;
+}
+
+
+#imageA:hover {
+    display: none;
+}
+
+#imageA:hover + #imageB {
+    display: block;
+}
+
+@media (max-width: 800px) {
+    .paragraphjp1, .paragraphjp2, .paragraphjp3,.paragraphen1, .paragraphen2,.paragraphen3 {
+        columns: 1;
+    }
+    .cover img {
+        width: 50%;
+        height: 50%; 
+        object-fit: cover;
+        transition: opacity 1s;
+    }
+}
+
+

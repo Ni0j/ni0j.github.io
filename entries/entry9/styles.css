@@ -99,19 +99,19 @@ body {
 }
 
 .credit-text a {
-    color: #DD0000; /* 超链接颜色，可以根据你的设计选择其他颜色 */
-    text-decoration: none; /* 去掉超链接下划线 */
+    color: #DD0000; 
+    text-decoration: none; 
   }
   
   .credit-text a:hover {
-    text-decoration: underline; /* 鼠标悬停时显示下划线 */
+    text-decoration: underline; 
   }
   
   span.name {
     position: relative;
     z-index: 1;
-    display: inline-block; /* 将 span 转换为块级元素 */
-    transform: translateZ(0); /* 防止元素产生视觉偏移 */
+    display: inline-block; 
+    transform: translateZ(0); 
 }
 
 span.name::before {
@@ -167,14 +167,14 @@ img {
 }
 
 
-/* 移除全局图片的默认黑白滤镜 */
+
 img {
     max-width: 100%;
     height: auto;
     transition: filter 0.3s; 
 }
 
-/* 为除了imageA和imageB之外的所有图片添加黑白滤镜 */
+
 img:not(#imageA):not(#imageB) {
     filter: grayscale(100%); 
 }

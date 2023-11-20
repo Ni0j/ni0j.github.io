@@ -1,0 +1,18 @@
+body {
+    margin: 0;
+    overflow: hidden;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .draggable {
+    position: absolute;
+    cursor: move;
+    color: #00FFB0;
+    font-size: 24px;
+  }
+  
+  .draggable:hover {
+    transform: scale(1.2);
+    transition: transform 0.3s ease-in-out;
+  }
+  

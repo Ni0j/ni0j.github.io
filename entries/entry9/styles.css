@@ -31,7 +31,7 @@ body {
     align-items: center;
 }
 
-.text, .text2, .paragraphjp1, .paragraphjp2,.paragraphjp3,.paragraphen1,.paragraphen2,.paragraphen3,.credit-text {
+.text, .text2, .paragraphjp1, .paragraphjp2, .paragraphjp3, .paragraphen1, .paragraphen2, .paragraphen3, .credit-text {
     font-family: "Hiragino Kaku Gothic Std", sans-serif;
     font-size: 36pt; 
     color: #FFFFFF;

@@ -357,6 +357,34 @@ img:not(#imageA):not(#imageB):hover {
       object-fit: cover;
       transition: opacity 1s;
   }
+  .button {
+    position: fixed;
+    top: 80%; 
+    right: 10px; 
+    z-index: 1000; 
+    border: 2px solid #fff;
+    background-color: #000;
+    color: #fff;
+    border-radius: 50%;
+    padding: 10px 20px;
+    font-size: 24px;
+    cursor: pointer;
+  }
+  
+  #colorToggleButton {
+    position: fixed;
+    top: 90%; 
+    right: 10px; 
+    z-index: 1000; 
+    border: 2px solid #fff;
+    background-color: #000;
+    color: #fff;
+    border-radius: 50%;
+    padding: 10px 20px;
+    font-size: 24px;
+    cursor: pointer;
+  }
+  
 }
 
 

@@ -1,35 +1,87 @@
-let isDragging = false;
-let offsetX, offsetY;
+document.addEventListener('DOMContentLoaded', function () {
+    var colorToggleButton = document.getElementById('colorToggleButton');
 
-document.querySelectorAll('.draggable').forEach(item => {
-  item.addEventListener('mousedown', startDrag);
+    colorToggleButton.addEventListener('click', function () {
+        document.body.classList.toggle('invert');
+    });
 });
 
-function startDrag(e) {
-  isDragging = true;
 
-  offsetX = e.clientX - parseFloat(e.target.style.left || 0);
-  offsetY = e.clientY - parseFloat(e.target.style.top || 0);
 
-  document.addEventListener('mousemove', drag);
-  document.addEventListener('mouseup', stopDrag);
-}
+function generateImage() {
+    const wrapper = document.querySelector('.wrapper');
+    const newImage = document.createElement('img');
 
-function drag(e) {
-  if (isDragging) {
-    const x = e.clientX - offsetX;
-    const y = e.clientY - offsetY;
+    const randomImage = 'imgs/bh' + Math.floor(Math.random() * 3 + 1) + '.png';
+    newImage.src = randomImage;
 
-    document.querySelectorAll('.draggable').forEach(item => {
-      item.style.left = x + 'px';
-      item.style.top = y + 'px';
+
+    const screenWidth = window.innerWidth;
+
+
+    let maxX, maxY;
+
+    if (screenWidth <= 800) {
+        maxX = screenWidth - 500;
+        maxY = window.innerHeight - 10000;
+    } else {
+        maxX = screenWidth - 1000;
+        maxY = window.innerHeight - 10000;
+    }
+
+    newImage.style.left = Math.random() * maxX + 'px';
+    newImage.style.top = Math.random() * maxY + 'px';
+
+    const randomRotation = Math.random() * 360;
+    newImage.style.transform = 'rotate(' + randomRotation + 'deg)';
+
+    newImage.addEventListener('click', function () {
+        this.remove();
     });
-  }
+
+    wrapper.appendChild(newImage);
 }
 
-function stopDrag() {
-  isDragging = false;
 
-  document.removeEventListener('mousemove', drag);
-  document.removeEventListener('mouseup', stopDrag);
-}
+//save 
+// document.addEventListener('DOMContentLoaded', function () {
+//     var colorToggleButton = document.getElementById('colorToggleButton');
+
+//     colorToggleButton.addEventListener('click', function () {
+//         document.body.classList.toggle('invert');
+//     });
+// });
+
+
+  
+
+//   function generateImage() {
+//     const wrapper = document.querySelector('.wrapper');
+
+
+//     const newImage = document.createElement('img');
+
+//     // this will randomly choose an img from bh1, bh2, bh3
+//     const randomImage = 'imgs/bh' + Math.floor(Math.random() * 3 + 1) + '.png';
+
+//     newImage.src = randomImage;
+
+//     // random position
+//     const maxX = window.innerWidth - 1000; 
+//     const maxY = window.innerHeight - 10000; 
+
+//     newImage.style.left = Math.random() * maxX + 'px';
+//     newImage.style.top = Math.random() * maxY + 'px';
+
+//     // random angle
+//     const randomRotation = Math.random() * 360;
+//     newImage.style.transform = 'rotate(' + randomRotation + 'deg)';
+
+    
+
+//     newImage.addEventListener('click', function () {
+//         this.remove();
+//     });
+
+//     wrapper.appendChild(newImage);
+// }

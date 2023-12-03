@@ -45,35 +45,34 @@ body {
     column-gap: 0.25in;
     border-top: 2px solid #FFFFFF; 
     break-inside: avoid;
-    margin-bottom: 20px; 
-}
+  }
 
-.paragraphjp2 {
+  .paragraphjp2 {
     font-size: 18pt;
     columns: 3;
     column-gap: 0.25in;
     break-inside: avoid;
-    margin-top: 100px;
-    margin-bottom: 100px;
-}
+    margin-top: 120px;
+    margin-bottom: 120px;
+  }
 
 
-.paragraphen1 {
+  .paragraphen1 {
     font-size: 18pt;
     columns: 3; 
     column-gap: 0.25in;
     break-inside: avoid; 
-    margin-top: 100px;
-}
+    margin-top: 120px;
+  }
 
-.paragraphen2 {
+  .paragraphen2 {
     font-size: 18pt;
     columns: 3;
     column-gap: 0.25in;
     break-inside: avoid;
-    margin-top: 100px;
-    
-}
+    margin-top: 120px;  
+    margin-bottom: 120px;
+  }
 
 img {
     max-width: 100%;
@@ -134,3 +133,72 @@ img[src="imgs/picall.webp"]:hover {
         columns: 1;
     }
 }
+
+.credit-text {
+    color: #f4f4f8; 
+    font-size: 12pt; 
+    bottom: 0; 
+    width: 100%; 
+  
+  }
+  
+  .credit-text a {
+    color: #6eec24; 
+    text-decoration: none; 
+  }
+  
+  .credit-text a:hover {
+    text-decoration: underline; 
+  }
+  
+  span.name {
+    position: relative;
+    z-index: 1;
+    display: inline-block; 
+    transform: translateZ(0); 
+  }
+  
+  span.name::before {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    bottom: 0;
+    left: -0.25em;
+    right: -0.25em;
+    background-color: #6eec24;
+    transform-origin: center left;
+    transform: scaleX(0);
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  span.name:hover::before {
+    transform: scaleX(1);
+    transform-origin: center left;
+  }
+  
+  span.credit {
+    position: relative;
+  }
+  
+  span.credit::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 10px;
+    background-color: #6eec24;
+    transform: scaleY(0);
+    transition: transform 0.5s ease;
+    left: -8px;
+    transform-origin: center top;
+  }
+  
+  span.credit:hover::before {
+    transform-origin: center bottom;
+    transform: scaleY(1);
+  }
+  
+  .highlight {
+    color: #6eec24; /* 设置高亮文字的颜色为绿色 */
+  }

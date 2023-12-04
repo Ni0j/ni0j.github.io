@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", function() {
         document.querySelector(".loading-overlay").style.display = "none";
         // Display the main content
         document.querySelector(".main-content").style.display = "block";
-    }, 7000);
+    }, 3500);
 });
 
 document.addEventListener("DOMContentLoaded", function () {
@@ -26,13 +26,13 @@ document.addEventListener("DOMContentLoaded", function () {
 const imgListOne = document.querySelector('.img-list')
 // 获取图片类数组，并将其转化为数组
 let imgBoxList = Array.prototype.slice.call(document.querySelectorAll('.img-list .img-box'))
-const imgBoxCount = imgBoxList.length
+const imgBoxCount = imgBoxList.length;
 const root = document.documentElement;
 const btnGroup = document.querySelector('.btn-group')
 const lastBtn = document.querySelector('.last')
 const nextBtn = document.querySelector('.next')
 const lastImgBox = document.getElementById('last-img-box')
-
+console.log(imgBoxList)
 // 获取--post-spacing和--post-size的值
 const postSpacing = Number(getComputedStyle(root).getPropertyValue('--post-spacing').replace("vw", ""));
 const postSize = Number(getComputedStyle(root).getPropertyValue('--post-size').replace("vw", ""));

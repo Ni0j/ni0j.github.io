@@ -47,7 +47,7 @@ var myButton = document.getElementById("backtohome");
 // 添加点击事件
 myButton.addEventListener("click", function() {
     // 在这里设置要跳转的网页地址
-    window.location.href = "file:///Users/nioion0/Documents/2023FALL/C1_Interaction/Nio_c1if23/ni0j.github.io/entries/index2.html";
+    window.location.href = "https://ni0j.github.io/entries/index2.html";
 });
 
 function scrollToBottom() {

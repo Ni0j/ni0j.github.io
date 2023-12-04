@@ -7,6 +7,38 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 
+var music = document.getElementById("music");
+    var myaudio = document.getElementById("myaudio");
+    var pausedTime = 0;
+
+    music.addEventListener("click", function() {
+        // 如果音频正在播放，则暂停
+        if (myaudio.paused) {
+            myaudio.play();
+            music.textContent = "⏸️"; // 按钮文本改为暂停
+        } else {
+            myaudio.pause();
+            pausedTime = myaudio.currentTime; // 记录暂停时的时间
+            music.textContent = "🎵"; // 按钮文本改为播放
+        }
+    });
+
+    // 添加音频播放结束事件监听器
+    myaudio.addEventListener("ended", function() {
+        music.textContent = "🎵"; // 按钮文本改为播放
+    });
+    
+
+var myButton = document.getElementById("backtohome");
+
+// 添加点击事件
+myButton.addEventListener("click", function() {
+    // 在这里设置要跳转的网页地址
+    window.location.href = "file:///Users/nioion0/Documents/2023FALL/C1_Interaction/Nio_c1if23/ni0j.github.io/entries/index2.html";
+});
+
+
+
 function getRandomValue(min, max) {
     return Math.floor(Math.random() * (max - min + 1)) + min;
   }
@@ -76,7 +108,58 @@ function generateImage() {
 
     wrapper.appendChild(newImage);
 }
+function getRandomNumber(min, max) {
+  return Math.random() * (max - min) + min;
+}
 
+function getRandomNumber(min, max) {
+  return Math.random() * (max - min) + min;
+}
+function getRandomNumber(min, max) {
+  return Math.random() * (max - min) + min;
+}
+
+
+// JavaScript function to show danmaku
+function showDanmaku() {
+  const danmakuContainer = document.getElementById('danmakuContainer');
+
+  // Define your text options
+  const textOptions = ['Buy Me', 'So Feeling', ];
+
+  // Randomly choose between text A and text B
+  const danmakuText = textOptions[Math.floor(Math.random() * textOptions.length)];
+
+  // Create a new danmaku element
+  const newDanmaku = document.createElement('div');
+  newDanmaku.innerText = danmakuText;
+
+  // Set random position and direction
+  const initialX = getRandomNumber(0, window.innerWidth);
+  const initialY = getRandomNumber(0, window.innerHeight);
+  const direction = Math.random() < 0.5 ? 1 : -1; // 1 for left to right, -1 for right to left
+
+  // Set initial position outside the viewport based on direction
+  newDanmaku.style.transform = `translate(${initialX}px, ${initialY}px) scaleX(${direction})`;
+
+  // Append danmaku to the container
+  danmakuContainer.appendChild(newDanmaku);
+
+  // Animate the danmaku
+  const animation = newDanmaku.animate([
+      { transform: `translate(${initialX}px, ${initialY}px) scaleX(${direction})` },
+      { transform: `translate(${direction === 1 ? window.innerWidth : -100}px, ${initialY}px) scaleX(${direction})` }
+  ], {
+      duration: 5000, // Adjust the duration as needed
+      easing: 'linear',
+      iterations: 1
+  });
+
+  // Remove the danmaku element after the animation completes
+  animation.onfinish = () => {
+      danmakuContainer.removeChild(newDanmaku);
+  };
+}
 
 //save 
 // document.addEventListener('DOMContentLoaded', function () {

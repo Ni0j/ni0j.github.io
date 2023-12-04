@@ -10,15 +10,17 @@
 <body>
 
   
-    <div class="flex-container">
+    
         <div class="container">
             <img id="imageA" src="imgs/banner1.png" alt="Image A">
+          </div>
+          <div class="flex-container">
             <img src="imgs/portrait.jpeg" alt="mainpic">
-        </div>
+          </div>
         <div class="text"><span class="name">Natori</span></div>
     
         
-        <div class="text2">Singer-songwriter</div>
+        <div class="text2">E Minor / 118.012 BPM</div>
         <div class="paragraphjp1">なとりさんがリリースした「Overdose(オーバードーズ)」とは、日本語で薬物などの過剰摂取を意味する言葉です。のめり込むという意味もあり、何かをやめられなくなった状況を歌った楽曲だと察せられます。
           1番では薬物の多量摂取で得られる高揚感や現実逃避と同じように、いけないことだと分かりつつも刺激的でやめられない依存性のある愛を歌詞に表しています。サビ部分の<span class="highlight">「解像度の悪い夢」</span>とは、現実を直視したくない鮮明ではない夢のことです。ファンの中では楽曲が表しているのはただの恋人ではなく、不倫や浮気ではなないかと考察されています。
           2番では葛藤しながらも結局2人の関係が続いている様子が描かれ、自分自身への問いかけをしているように始まります。歌詞の中の<span class="highlight">Two step from(hell)with me, darling</span>は直訳すると「2人は地獄の2歩手前」です。このまま2人の関係を続けるのはお互いの将来にも世間からも歓迎されないのにやめられないという状況のようです。
@@ -60,11 +62,13 @@
  
 
     <section>
-      <div class="button" id="colorToggleButton">
-        💡
-      </div>
-    </section>
-  
+      <div class="button" id="colorToggleButton">💡</div>
+      <!-- <button type="button" class="special" onclick="generateImage()">🕳️ </button> -->
+      <button type="button" id="music" class="button">🎵</button>
+      <audio id="myaudio" src="spotifydown.com - Overdose.mp3"></audio>        
+      <button type="button" id="backtohome" class="button">🔙</button>
+      <div class="wrapper"></div>
+  </section>
 
 
 
@@ -78,8 +82,10 @@
 
 
 
-  
-  <script type="text/javascript" src="script.js"></script>
+
+
+<script type="text/javascript" src="script.js"></script>
 
 </body>
 </html>
+  

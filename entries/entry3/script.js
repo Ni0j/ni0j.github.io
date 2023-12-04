@@ -6,6 +6,35 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 });
 
+var music = document.getElementById("music");
+    var myaudio = document.getElementById("myaudio");
+    var pausedTime = 0;
+
+    music.addEventListener("click", function() {
+        // 如果音频正在播放，则暂停
+        if (myaudio.paused) {
+            myaudio.play();
+            music.textContent = "⏸️"; // 按钮文本改为暂停
+        } else {
+            myaudio.pause();
+            pausedTime = myaudio.currentTime; // 记录暂停时的时间
+            music.textContent = "🎵"; // 按钮文本改为播放
+        }
+    });
+
+    // 添加音频播放结束事件监听器
+    myaudio.addEventListener("ended", function() {
+        music.textContent = "🎵"; // 按钮文本改为播放
+    });
+    
+
+var myButton = document.getElementById("backtohome");
+
+// 添加点击事件
+myButton.addEventListener("click", function() {
+    // 在这里设置要跳转的网页地址
+    window.location.href = "file:///Users/nioion0/Documents/2023FALL/C1_Interaction/Nio_c1if23/ni0j.github.io/entries/index2.html";
+});
 
 
 function generateImage() {

@@ -42,3 +42,14 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   });
   
+
+    // 弹出浏览器原生弹窗
+    var showModal = function () {
+        alert('just click Yesssssssssssssss');
+        // 如果用户点击"是"，不需要添加任何处理逻辑，浏览器会继续加载页面
+        // 如果用户点击"否"，浏览器会停留在当前页面
+    };
+
+    // 在页面加载时调用弹窗函数
+    showModal();
+

@@ -478,3 +478,47 @@ body.invert .credit-text {
       background-color: #DEB887;
       cursor:  pointer;
     } */
+
+
+
+
+    .grid-container {
+      display: grid;
+      grid-template-columns: repeat(5, 300px);
+      grid-gap: 10px;
+      margin-top: 1000px;
+    }
+    
+    .grid-item {
+      width: 300px;
+      height: 300px;
+      background-color: #ddd; /* 默认灰度颜色 */
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 24px;
+      font-weight: bold;
+      cursor: pointer;
+      font-family: "Hiragino Kaku Gothic Std", sans-serif;
+    }
+    
+    .color-log {
+      display: flex;
+      margin-top: 10px;
+    }
+    
+    .color-log-item {
+      width: 30px;
+      height: 30px;
+      margin-right: 10px;
+    }
+    
+    
+    /* 添加媒体查询 */
+    @media screen and (max-width: 800px) {
+      .grid-item {
+        cursor: pointer;
+      }
+    }
+
+

@@ -98,3 +98,58 @@ function generateImage() {
 
 //     wrapper.appendChild(newImage);
 // }
+
+
+// script.js
+// script.js
+const gridItems = document.querySelectorAll('.grid-item');
+const colorLog = document.querySelector('.color-log');
+
+gridItems.forEach(item => {
+  item.addEventListener('click', () => {
+    const color = getRandomColor();
+    item.style.backgroundColor = color;
+    logColor(color);
+  });
+});
+
+// 添加键盘事件监听
+document.addEventListener('keydown', (event) => {
+  const key = event.key.toUpperCase();
+  const cell = document.getElementById(`cell${key}`);
+  if (cell) {
+    const color = getRandomColor();
+    cell.style.backgroundColor = color;
+    logColor(color);
+  }
+});
+
+function logColor(color) {
+  const colorLogItem = document.createElement('div');
+  colorLogItem.classList.add('color-log-item');
+  colorLogItem.style.backgroundColor = color;
+  colorLog.appendChild(colorLogItem);
+}
+
+function getRandomColor() {
+  const letters = '0123456789ABCDEF';
+  let color = '#';
+  for (let i = 0; i < 6; i++) {
+    color += letters[Math.floor(Math.random() * 16)];
+  }
+  return color;
+}
+
+
+document.addEventListener('keydown', (event) => {
+  const key = event.key.toUpperCase();
+  // 检查按下的键是否为字母
+  if (/^[A-I]$/.test(key)) {
+    const cell = document.getElementById(`cell${key}`);
+    if (cell) {
+      const color = getRandomColor();
+      cell.style.backgroundColor = color;
+      logColor(color);
+    }
+  }
+});

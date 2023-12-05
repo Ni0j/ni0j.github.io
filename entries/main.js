@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", function() {
         document.querySelector(".loading-overlay").style.display = "none";
         // Display the main content
         document.querySelector(".main-content").style.display = "block";
-    }, 4000);
+    }, 2000);
 });
 
 document.addEventListener("DOMContentLoaded", function () {

@@ -1,11 +1,7 @@
 document.addEventListener('DOMContentLoaded', function () {
-    var colorToggleButton = document.getElementById('colorToggleButton');
     var generateImagesBtn = document.getElementById('generateImagesBtn');
     var imageContainer = document.getElementById('imageContainer');
 
-    colorToggleButton.addEventListener('click', function () {
-        document.body.classList.toggle('invert');
-    });
 
     // Define the generateImage function
     window.generateImage = function () {

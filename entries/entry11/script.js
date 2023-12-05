@@ -3,6 +3,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     colorToggleButton.addEventListener('click', function () {
         document.body.classList.toggle('invert');
+        document.getElementById('colorToggleButton').style.position='fixed !important';
     });
 });
 

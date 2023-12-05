@@ -286,7 +286,7 @@ body.invert .credit-text {
   }
   
   .credit-text a {
-    color: #0121FF; 
+    color: #F2CCE8; 
     text-decoration: none; 
   }
   
@@ -309,7 +309,7 @@ body.invert .credit-text {
     bottom: 0;
     left: -0.25em;
     right: -0.25em;
-    background-color: #0121FF;
+    background-color: #F2CCE8;
     transform-origin: center left;
     transform: scaleX(0);
     transition: transform 0.2s ease-in-out;
@@ -330,7 +330,7 @@ body.invert .credit-text {
     top: 0;
     bottom: 0;
     width: 10px;
-    background-color: #0121FF;
+    background-color: #F2CCE8;
     transform: scaleY(0);
     transition: transform 0.5s ease;
     left: -8px;
@@ -343,7 +343,7 @@ body.invert .credit-text {
   }
   
   .highlight {
-    color: #0121FF; 
+    color: #F2CCE8; 
   }
   
   #imageA, #imageB {
@@ -460,21 +460,73 @@ body.invert .credit-text {
       cursor: pointer;
     }
     
-    #colorToggleButton {
-      position: fixed;
-      top: 90%; 
-      right: 10px; 
-      z-index: 1000; 
-      border: 2px solid #fff;
-      background-color: #000;
-      color: #fff;
-      border-radius: 50%;
-      padding: 10px 20px;
-      font-size: 24px;
-      cursor: pointer;
-    }
+    
+  #colorToggleButton {
+    position: fixed;
+    top: 97vmin; 
+    right: 10px; 
+    z-index: 1000; 
+    border: 2px solid #fff;
+    background-color: #000;
+    color: #fff;
+    border-radius: 50%;
+    padding: 10px 20px;
+    font-size: 24px;
+    cursor: pointer;
+  }
+
+  #music {
+    position: fixed;
+    top: 108vmin; 
+    right: 10px; 
+    z-index: 1000; 
+    border: 2px solid #fff;
+    background-color: #000;
+    color: #fff;
+    border-radius: 50%;
+    padding: 10px 20px;
+    font-size: 24px;
+    cursor: pointer;
+  }
+
+  #backtohome {
+    position: fixed;
+    top: 130vmin; 
+    right: 10px; 
+    z-index: 1000; 
+    border: 2px solid #fff;
+    background-color: #000;
+    color: #fff;
+    border-radius: 50%;
+    padding: 10px 20px;
+    font-size: 24px;
+    cursor: pointer;
+  }
+
+
+
+  .special {
+    position: fixed;
+    top: 119vmin; 
+    right: 10px; 
+    z-index: 1000; 
+    border: 2px solid #fff;
+    background-color: #000;
+    color: #fff;
+    border-radius: 50%;
+    padding: 10px 20px;
+    font-size: 24px;
+    cursor: pointer;
+  }
+  
+  
+  
     
   }
+  
+  
+  
+  
   
   
   

@@ -239,7 +239,72 @@ img[src="imgs/picall.webp"]:hover {
     .paragraphjp1, .paragraphjp2, .paragraphen1, .paragraphen2 {
         columns: 1;
     }
-}
+
+    
+  #colorToggleButton {
+    position: fixed;
+    top: 97vmin; 
+    right: 10px; 
+    z-index: 1000; 
+    border: 2px solid #fff;
+    background-color: #000;
+    color: #fff;
+    border-radius: 50%;
+    padding: 10px 20px;
+    font-size: 24px;
+    cursor: pointer;
+  }
+
+  #music {
+    position: fixed;
+    top: 108vmin; 
+    right: 10px; 
+    z-index: 1000; 
+    border: 2px solid #fff;
+    background-color: #000;
+    color: #fff;
+    border-radius: 50%;
+    padding: 10px 20px;
+    font-size: 24px;
+    cursor: pointer;
+  }
+
+  #backtohome {
+    position: fixed;
+    top: 130vmin; 
+    right: 10px; 
+    z-index: 1000; 
+    border: 2px solid #fff;
+    background-color: #000;
+    color: #fff;
+    border-radius: 50%;
+    padding: 10px 20px;
+    font-size: 24px;
+    cursor: pointer;
+  }
+
+
+
+  .special {
+    position: fixed;
+    top: 119vmin; 
+    right: 10px; 
+    z-index: 1000; 
+    border: 2px solid #fff;
+    background-color: #000;
+    color: #fff;
+    border-radius: 50%;
+    padding: 10px 20px;
+    font-size: 24px;
+    cursor: pointer;
+  }
+  
+  
+    
+  }
+  
+  
+
 
 .credit-text {
     color: #f4f4f8; 
@@ -344,20 +409,6 @@ img[src="imgs/picall.webp"]:hover {
 .button {
   position: fixed;
   top: 10px; 
-  right: 10px; 
-  z-index: 1000; 
-  border: 2px solid #fff;
-  background-color: #000;
-  color: #fff;
-  border-radius: 50%;
-  padding: 10px 20px;
-  font-size: 24px;
-  cursor: pointer;
-}
-
-#colorToggleButton {
-  position: fixed;
-  top: 70px; 
   right: 10px; 
   z-index: 1000; 
   border: 2px solid #fff;

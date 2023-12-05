@@ -11,7 +11,7 @@
 }
 
 .loader {
-  font-size: 24px; /* 设置文本的字体大小 */
+  font-size: 108px; /* 设置文本的字体大小 */
   text-align: center; /* 居中对齐文本 */
   opacity: 1; /* 初始时完全不透明 */
   transition: opacity 15s ease; /* 添加过渡效果，可以根据需要调整时间 */
@@ -51,7 +51,7 @@
   
   body {
     background: #000;
-    background-image: url(./imgs/grid.png);
+    background-image: url(./imgs/bg4.png);
     background-repeat: repeat;
     background-size: 300px 300px;
   }
@@ -65,10 +65,10 @@
   }
   
   .title p {
-    font-size: 4rem;
+    font-size: 1.2rem;
     font-weight: 800;
     white-space: nowrap;
-    color:#fff
+    color:#f4f4f8
   }
   
   .title p {

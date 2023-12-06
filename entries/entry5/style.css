@@ -309,7 +309,7 @@ body.invert .credit-text {
     bottom: 0;
     left: -0.25em;
     right: -0.25em;
-    background-color: #F2CCE8;
+    background-color: #af5999;
     transform-origin: center left;
     transform: scaleX(0);
     transition: transform 0.2s ease-in-out;

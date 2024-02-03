@@ -1,0 +1,265 @@
+html{
+    margin:8;
+    font-size: 10px;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    box-sizing: border-box;
+
+}
+
+body{
+    font-size: 1.6rem;
+    margin: 0;
+}
+
+h1 {
+    font-size: 20px; /* 设置字体大小为 24 像素，可以根据需要进行调整 */
+    color: #585858; /* 设置字体颜色为深灰色，可以根据需要进行调整 */
+}
+
+div p {
+    font-size: 12px; /* 设置字体大小为 16 像素，可以根据需要进行调整 */
+    color: #999999; /* 设置字体颜色为深灰色，可以根据需要进行调整 */
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    margin-bottom: -0.5rem; 
+}
+
+
+.flex-container{
+    display: flex;
+    align-content: right;
+    flex-direction: row;
+    height: 50vw;
+    margin-top: 6rem;
+    margin-left: 4rem;
+}
+
+.flex-container-content h1::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 1px;
+    border-bottom: 1px solid rgb(238, 238, 238);; /* 可以根据你的设计选择合适的颜色 */
+    margin: 10px 0; /* 根据你的需要调整上下间距 */
+}
+
+.flex-container-image{
+  width: 70%;
+  height: 100%;
+  padding: 2rem 2rem 2rem 2rem;
+}
+
+.flex-container-image img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.flex-container-content{
+    width: 20%;
+    height: 100%;
+    overflow: scroll;
+    padding: 0em 0em 3em;
+    background-color: white;
+    overflow-y: auto;
+}
+
+.updatetime{
+    margin-bottom: 10px;
+}
+.content-actions {
+    display: flex;
+    padding-top: 4rem;
+    justify-content: space-between;
+    padding-bottom: 0.34375em;
+    border-bottom: 1px solid rgb(238, 238, 238);
+}
+
+.actions{
+    font-size: 13px;
+    color: #999999;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    cursor: pointer;
+}
+
+
+
+.content-useractions {
+    flex-direction: column;
+    padding-top: 0rem;
+}
+
+
+h2 {
+    font-size: 12px;
+    color: #585858;
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: bold;
+    margin-bottom: -0.5rem; 
+    cursor: pointer;
+}
+
+
+
+.content-toggle-container{
+    display:flex;
+    justify-content: space-around;
+}
+
+.content-toggle{
+   width: 50%;
+   text-align: center;
+   padding: 1rem 2rem;
+   cursor: pointer;
+}
+
+.content-toggle{
+    border-bottom: 0.5px solid black;
+    margin-top: 20px;
+}
+
+.content-connections{
+   margin-top:1.5rem;
+}
+
+
+.content-toggle active{
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 13px;
+    color:#333333
+}
+
+.content-toggle {
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 13px;
+    color:#333333
+}
+
+
+
+.content-connect{
+    /* position: absolute;  */
+    display: inline-block; 
+    background-color: white;
+    border: 2px solid rgb(222, 222, 222);
+    cursor: pointer;
+    color: #585858;
+    font-size: 14px;
+    font-weight: bold;
+    font-family: Helvetica, Arial, sans-serif;
+    padding: 0.65625em 3em;
+    box-sizing: border-box; 
+    margin-top: 14px;
+    margin-bottom: 4px;
+}
+
+
+
+
+
+
+.date{
+user-select: text;
+box-sizing: border-box;
+-webkit-font-smoothing: antialiased;
+font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+font-size: 10px;
+line-height: 1.33;
+color: rgb(153, 153, 153);
+text-align: left;
+margin-top: 12px;
+
+}
+
+
+
+.link {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-decoration: none;
+    break-inside: avoid;
+    overflow: hidden;
+    cursor: pointer;
+    box-sizing: border-box;
+    margin-top: 0.34375em;
+    padding: 1em;
+    border: 2px solid rgb(207, 203, 214);
+    color: rgb(75, 61, 103);
+}
+
+.greenlink {
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    text-decoration: none;
+    break-inside: avoid;
+    overflow: hidden;
+    cursor: pointer;
+    box-sizing: border-box;
+    margin-top: 0.34375em;
+    padding: 1em;
+    border: 2px solid rgb(193, 233, 191);
+    color: rgb(23, 172, 16);
+}
+
+
+
+.connectny {
+    box-sizing: border-box;
+    margin-bottom: 2em;
+    margin-top: 1em;
+    text-align: center;
+    position: relative;
+    font-size: 0.75rem;
+}
+
+
+
+.creator {
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-size: 12px;
+    color: rgb(88, 88, 88);
+    margin-left: 0.34375em;
+    margin-right: 0.34375em;
+    text-align: right;
+    display: inline-block;
+    vertical-align: baseline;
+    line-height: 1.33;
+    white-space: nowrap;
+}
+
+
+.load {
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-size: 12px;
+    line-height: 1.33;
+    color: rgb(106, 106, 106);
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 24px;
+    margin-bottom: 18px;
+    cursor:pointer
+}
+
+.blocks{
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-size: 12px;
+    color: #4B3D67;
+    margin-left: 0.34375em;
+    margin-right: 0.34375em;
+    display: inline-block;
+    vertical-align: baseline;
+    line-height: 1.33;
+    white-space: nowrap;
+}
+
+
+
